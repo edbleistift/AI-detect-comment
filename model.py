@@ -92,4 +92,4 @@ print(f'Validation Accuracy: {correct / total:.2f}')
 # Сохранение модели и токенизатора
 model.save_pretrained("saved_model")
 tokenizer.save_pretrained("saved_model")
-print("Модель сохранена в папке 'saved_model'")
+print("Модель сохранена в директории 'saved_model'")
