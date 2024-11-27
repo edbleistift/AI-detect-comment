@@ -6,7 +6,6 @@ model_path = "saved_model"
 tokenizer = BertTokenizer.from_pretrained(model_path)
 model = BertForSequenceClassification.from_pretrained(model_path)
 
-# Переводим модель в режим оценки
 model.eval()
 device = torch.device("cuda") if torch.cuda.is_available() else torch.device("cpu")
 model.to(device)
